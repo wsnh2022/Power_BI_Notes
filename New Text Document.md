@@ -74,4 +74,3 @@ Absolutely. Here's a **clean, categorized Power Query formula guide** with all 3
 | ✅     | Keep transformations **clean and lean**-Power Query runs before visuals, so performance is better than DAX for row logic |
 
 ---
-
