@@ -94,6 +94,10 @@ Here's the **final enhanced list of additions**, rewritten with **practical nest
 
 </details>
 
+```M-CODE
+if [UnitPrice] = null then "Missing" else if [UnitPrice] <= 0 then "Invalid" else if [UnitPrice] > 1000 then "Unusual" else "Normal"
+```
+
 ---
 
 <details>
