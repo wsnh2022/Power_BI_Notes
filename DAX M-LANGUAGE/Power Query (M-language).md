@@ -3,7 +3,7 @@
 ---
 
 <details>
-<summary>🟩 1. Math & Calculation Columns</summary>
+<summary> # 🟩 1. Math & Calculation Columns</summary>
 
 |  # | What You Want to Do            | Formula                                            |
 | -: | ------------------------------ | -------------------------------------------------- |
