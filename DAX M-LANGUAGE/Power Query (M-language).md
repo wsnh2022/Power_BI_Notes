@@ -1,4 +1,4 @@
-# 🧠 Power Query Custom Column Formula Guide (Excel-Style)
+# 🧠 Power Query (M-language) Custom Column Formula Guide.
 
 ---
 
