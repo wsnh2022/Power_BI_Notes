@@ -1,7 +1,3 @@
-Absolutely. Here's a **clean, categorized Power Query formula guide** with all 30 formulas + pro tips, organized into themes. Great for practice and quick reference.
-
----
-
 # 🧠 Power Query Custom Column Formula Guide (Excel-Style)
 
 ## 🟩 1. **Math & Calculation Columns**
