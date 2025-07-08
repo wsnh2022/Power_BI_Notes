@@ -18,7 +18,7 @@
 ---
 
 <details>
-<summary>🟨 2. Date & Time Columns</summary>
+<summary><h2>🟨 2. Date & Time Columns</h2></summary>
 
 |  # | What You Want to Do                | Formula                                                                              |
 | -: | ---------------------------------- | ------------------------------------------------------------------------------------ |
@@ -39,7 +39,7 @@
 ---
 
 <details>
-<summary>🟦 3. Text & String Operations</summary>
+<summary><h2>🟦 3. Text & String Operations</h2></summary>
 
 |  # | What You Want to Do                     | Formula                                         |
 | -: | --------------------------------------- | ----------------------------------------------- |
@@ -58,7 +58,7 @@
 ---
 
 <details>
-<summary>🟧 4. Conditional Logic Columns</summary>
+<summary><h2>🟧 4. Conditional Logic Columns</h2></summary>
 
 |  # | What You Want to Do                 | Formula                                                                                             |
 | -: | ----------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -72,7 +72,7 @@
 ---
 
 <details>
-<summary>⚙️ Pro Tips</summary>
+<summary><h2>⚙️ Pro Tips</h2></summary>
 
 | Tip # | What to Know                                                                                                             |
 | ----- | ------------------------------------------------------------------------------------------------------------------------ |
