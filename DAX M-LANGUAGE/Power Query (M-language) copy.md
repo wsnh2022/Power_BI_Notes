@@ -75,6 +75,63 @@
 
 ---
 
+Perfect. Let's **upgrade the examples** to use more realistic, **nested `if...else` logic**—just like you'd apply in a real project. These help with **tiered classifications, data validation, and report tagging** — and they’re much more useful than basic one-liner flags.
+
+Here's the **final enhanced list of additions**, rewritten with **practical nested logic**, ready to be added into your guide:
+
+---
+
+<details>
+<summary><h2>🧹 5. Data Cleanup & Validation Columns</h2></summary>
+
+| #  | What You Want to Do                           | Formula                                                                                                                                |
+| -- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 30 | Flag Missing, Blank or Valid Product Name     | `if [Product] = null then "Missing" else if Text.Trim([Product]) = "" then "Blank" else "Valid"`                                       |
+| 31 | Standardize Blank Customer Names              | `if Text.Trim([Customer]) = "" or [Customer] = null then "Unknown" else Text.Proper([Customer])`                                       |
+| 32 | Clean Product Name to Proper Case             | `if [Product] <> null then Text.Proper(Text.Trim([Product])) else "Unnamed"`                                                           |
+| 33 | Flag Unit Price Quality Check                 | `if [UnitPrice] = null then "Missing" else if [UnitPrice] <= 0 then "Invalid" else if [UnitPrice] > 1000 then "Unusual" else "Normal"` |
+| 34 | Extract Digits Only from Product (e.g. codes) | `Text.Select([Product], {"0".."9"})`                                                                                                   |
+
+</details>
+
+---
+
+<details>
+<summary><h2>📅 6. Extended Date Logic</h2></summary>
+
+| #  | What You Want to Do                      | Formula                                                                                                                           |
+| -- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 35 | Order Age Bucket (Recent, Aged, Old)     | `let age = Duration.Days(DateTime.LocalNow() - [OrderDate]) in if age < 30 then "Recent" else if age < 90 then "Aged" else "Old"` |
+| 36 | Weekday as Number (Monday=1 to Sunday=7) | `Date.DayOfWeek([OrderDate], Day.Monday) + 1`                                                                                     |
+
+</details>
+
+---
+
+<details>
+<summary><h2>📊 7. Classification & Grouping</h2></summary>
+
+| #  | What You Want to Do                        | Formula                                                                                                                       |
+| -- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 37 | Quantity Tier (Small, Medium, Large, Bulk) | `if [Qty] >= 500 then "Bulk" else if [Qty] >= 100 then "Large" else if [Qty] >= 50 then "Medium" else "Small"`                |
+| 38 | Product Category Mapping by Code Prefix    | `if Text.StartsWith([Product], "A") then "Category A" else if Text.StartsWith([Product], "B") then "Category B" else "Other"` |
+
+</details>
+
+---
+
+<details>
+<summary><h2>🔗 8. Relational & Lookup Helpers</h2></summary>
+
+| #  | What You Want to Do              | Formula                                                                               |
+| -- | -------------------------------- | ------------------------------------------------------------------------------------- |
+| 39 | Create Composite Key for Merge   | `Text.From([OrderID]) & "-" & Date.ToText([OrderDate], "yyyyMM")`                     |
+| 40 | Lookup & Join from Another Table | Use **Merge Queries** (Left Join) → match on ID/Name, then Expand to bring in columns |
+
+</details>
+
+---
+
 <details>
 <summary><h2>⚙️ Pro Tips</h2></summary>
 
